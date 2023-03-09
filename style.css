@@ -55,7 +55,7 @@ nav.dropDown{
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
+    border-top: 6px solid #23242a;
     margin-left: 25px;
     transition: 0.3s;
 }
@@ -104,7 +104,8 @@ nav.dropDown{
     opacity: 1;
 }
 section{
-    height: 500px;
+    height: auto;
+    margin: 2em 0;
 }
 
 section h1{
@@ -118,10 +119,76 @@ section h1{
     background-image: url('https://media1.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 500px;
+    margin-top: 0%;
 }
 .title{
     justify-content: center;
     text-align: center;
     margin: 100px;
     font-size: 50px;
+}
+
+/*Section Rogers Park*/
+.viewfinder{
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+.slideview{
+    display: block;
+}
+.finder img{
+    height: auto;
+    width: 40%;
+    border: 1px black solid;
+}
+
+/*Misc Statues*/
+.holder{
+    margin: 0 50px;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48em;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type:  x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5em 3em -0.75em hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5em;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1em;
+    position: absolute;
+    bottom: 1.25em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #23242a;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+footer{
+    margin: 50px;
+    border-top: 2px black solid;
 }
