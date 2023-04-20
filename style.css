@@ -117,9 +117,9 @@ section h1{
     align-items: center;
     flex-wrap: wrap;
     background-image: url('https://media1.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif');
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-size: cover;
-    height: 500px;
+    height: 300px;
     margin-top: 0%;
 }
 .title{
@@ -133,10 +133,34 @@ section h1{
 .viewfinder{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0 50px;
 }
-.slideview{
+.slideview img{
     display: block;
+    height: 200px;
+    margin: 10px 0;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.slideview img:hover{
+    opacity: 1;
+}
+.img-container img{
+    height: 45rem;
+    width: 50rem;
+}
+.img-container {
+    padding: 10px;
+    padding-left: 20px;
+}
+.scroll-wrapper{
+    max-height: 45rem;
+    border: 1px solid #000;
+    overflow-y: auto;
+}
+.scroll-wrapper img{
+    text-align: center;
 }
 .finder img{
     height: auto;

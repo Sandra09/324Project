@@ -30,3 +30,9 @@ dropdowns.forEach(dropdown => {
         });
     });
 });
+
+function myFunction(smallImg){
+    var fullImg = document.getElementById("imageBox1");
+    fullImg.src = smallImg.src;
+    fullImg.title = smallImg.title;
+}
