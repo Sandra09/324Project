@@ -36,3 +36,8 @@ function myFunction(smallImg){
     fullImg.src = smallImg.src;
     fullImg.title = smallImg.title;
 }
+function myFunction1(smallImg){
+    var fullImg = document.getElementById("imageBox2");
+    fullImg.src = smallImg.src;
+    fullImg.title = smallImg.title;
+}
