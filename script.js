@@ -44,77 +44,77 @@ function myFunction1(smallImg){
 
 //misc slider
 //Get elements from the DOM
-const slider = document.querySelector('.image-slider');
-const arrLeft = document.querySelector('.arr-left');
-const arrRight = document.querySelector('.arr-right');
-const heading = document.querySelector('.caption h1');
-const description = document.querySelector('.caption p');
+// const slider = document.querySelector('.image-slider');
+// const arrLeft = document.querySelector('.arr-left');
+// const arrRight = document.querySelector('.arr-right');
+// const heading = document.querySelector('.caption h1');
+// const description = document.querySelector('.caption p');
 
-const images = [
-    "Artinstituteofchicago.jpg",
-    "CentennialWheelchicago.webp",
-    "Chicagomuseumofice-cream.jpg",
-    "Dusablemuseum.webp",
-    "LoyolaUniversityMuseumofArt.jpg",
-    "MuseumofContemporaryChicago.jpg",
-    "Museumofcontemporaryphotography.jpg",
-    "MuseumofMexicanart.webp",
-    "Nationalveteransartmuseum.jpg",
-    "Thefieldmuseum.jpg"
-];
+// const images = [
+//     "Artinstituteofchicago.jpg",
+//     "CentennialWheelchicago.webp",
+//     "Chicagomuseumofice-cream.jpg",
+//     "Dusablemuseum.webp",
+//     "LoyolaUniversityMuseumofArt.jpg",
+//     "MuseumofContemporaryChicago.jpg",
+//     "Museumofcontemporaryphotography.jpg",
+//     "MuseumofMexicanart.webp",
+//     "Nationalveteransartmuseum.jpg",
+//     "Thefieldmuseum.jpg"
+// ];
 
-const headings = [
-    "Art Institute of Chicago",
-    "Centennial Wheel chicago",
-    "Chicago Museum of Ice Cream",
-    "Dusable Museum",
-    "Loyola University Museum of Art",
-    "Museum of Contemporary Arts Chicago",
-    "Museum of Contemporary Photography",
-    "Museum of Mexican Art",
-    "National Veterans Art Museum",
-    "The field Museum"
-];
+// const headings = [
+//     "Art Institute of Chicago",
+//     "Centennial Wheel chicago",
+//     "Chicago Museum of Ice Cream",
+//     "Dusable Museum",
+//     "Loyola University Museum of Art",
+//     "Museum of Contemporary Arts Chicago",
+//     "Museum of Contemporary Photography",
+//     "Museum of Mexican Art",
+//     "National Veterans Art Museum",
+//     "The field Museum"
+// ];
 
-const descriptions = [
-    "Discover paintings, drawings, sculpture, and design spanning the ancient to the contemporary world",
-    "Soar to heights of nearly 200 feet on the iconic Centennial Wheel",
-    "An ice cream fantasy of endless treats and playtime for all ages",
-    "The Nation's Oldest Independent African American Museum",
-    "Your Loyola Experience starts here",
-    "Where new ideas are shown and tested",
-    "Boldly presents thought-provoking photography through groundbreaking exhibitions and programming",
-    "Recreation of the legacy left behind by Native cultures before Spanish colonizers arrived to present-day Mexico",
-    "The impact of war through the collection, preservation and exhibition of art by military veterans",
-    "Connects all of us to the natural world and the human story"
-];
+// const descriptions = [
+//     "Discover paintings, drawings, sculpture, and design spanning the ancient to the contemporary world",
+//     "Soar to heights of nearly 200 feet on the iconic Centennial Wheel",
+//     "An ice cream fantasy of endless treats and playtime for all ages",
+//     "The Nation's Oldest Independent African American Museum",
+//     "Your Loyola Experience starts here",
+//     "Where new ideas are shown and tested",
+//     "Boldly presents thought-provoking photography through groundbreaking exhibitions and programming",
+//     "Recreation of the legacy left behind by Native cultures before Spanish colonizers arrived to present-day Mexico",
+//     "The impact of war through the collection, preservation and exhibition of art by military veterans",
+//     "Connects all of us to the natural world and the human story"
+// ];
 
-let id = 0;
+// let id = 0;
 
-//The slider function
-function slide(id){
-    //set background image
-    slider.style.backgroundImage = "url(Misc/${images[id]})";
-    //change heading
-    heading.innerText = headings[id];
-    //change description
-    description.innerText = descriptions[id];
+// //The slider function
+// function slide(id){
+//     //set background image
+//     slider.style.backgroundImage = "url(Misc/${images[id]})";
+//     //change heading
+//     heading.innerText = headings[id];
+//     //change description
+//     description.innerText = descriptions[id];
 
-    //click arrows
-    arrLeft.addEventListener('click', () => {
-        //decrement image id
-        id--;
-        if(id < 0){
-            id = images.length - 1;
-        }
-        slide(id);
-    });
-    arrRight.addEventListener('click', () => {
-        //increment image id
-        id++;
-        if(id > images.length - 1){
-            id = 0;
-        }
-        slide(id);
-    });
-}
+//     //click arrows
+//     arrLeft.addEventListener('click', () => {
+//         //decrement image id
+//         id--;
+//         if(id < 0){
+//             id = images.length - 1;
+//         }
+//         slide(id);
+//     });
+//     arrRight.addEventListener('click', () => {
+//         //increment image id
+//         id++;
+//         if(id > images.length - 1){
+//             id = 0;
+//         }
+//         slide(id);
+//     });
+// }
