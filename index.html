@@ -8,7 +8,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Urbanist:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -24,18 +23,18 @@
                                 <div class="caret"></div>
                             </div>
                             <ul class="menu">
-                                <li class="active">Home</li>
-                                <li>Rogers Park Landmarks</li>
-                                <li>Mundelein Artwork</li>
-                                <li>Ralph Arnold Gallery</li>
-                                <li>Misc Statues</li>
-                                <li>Contact Us</li>
+                                <a href="#mainview"><li class="active">Home</li></a>
+                                <a href="#RPL"><li>Rogers Park Landmarks</li></a>
+                                <a href="#Mundy"><li>Mundelein Artwork</li></a>
+                                <a href="#RAG"><li>Ralph Arnold Gallery</li></a>
+                                <a href="#Misc"><li>Misc Statues</li></a>
+                                <a href="#"><li>Contact Us</li></a>
                             </ul>
                         </div>
                     </nav>
                     <div class="title">RoPo Art</div>
                 </section>
-                <section>
+                <section id="RPL">
                     <h1>Rogers Park Landmarks</h1>
                     <iframe
                         width="65%"
@@ -45,7 +44,7 @@
                     </iframe>
                     <p class="holder">Here we are at the northwest most part of the "Mile of Murals", we can either go left or right of this intersection to walk south down to see the rest of the murals along Glenwood Ave!</p>
                 </section>
-                <section>
+                <section id="Mundy">
                     <h1>Mundelein Artwork</h1>
                     <p class="holder">Mundelein 7th Floor Artwork - Drawing I, Rafael E. Vera
                         Project: Levels of Abstraction </p>
@@ -77,7 +76,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section id="RAG">
                     <h1>Ralph Arnold Gallery</h1>
                     <p class="holder">Keepscapes features the work of Loyola seniors studying art and visual communications. 
                         The work shown represents the culmination of each student's experiences as a Fine Arts major. 
@@ -122,7 +121,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
+                <section id="Misc">
                     <h1>Misc Statues</h1>
                     <p class="holder">Different links and pictures of other museums or historical landmarks that the user can link to</p>
                     <!--<div class="image-slider-wrapper">
@@ -201,4 +200,5 @@
     <footer>
         <span>Copyright © 2023 RoPo ART</span>
     </footer>
+    <script src="script.js"></script>
 </html>
