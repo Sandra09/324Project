@@ -32,6 +32,11 @@ dropdowns.forEach(dropdown => {
 });
 
 //image gallery
+function myFunction0(smallImg){
+    var fullImg = document.getElementById("imageBox");
+    fullImg.src = smallImg.src;
+    fullImg.title = smallImg.title;
+};
 function myFunction(smallImg){
     var fullImg = document.getElementById("imageBox1");
     fullImg.src = smallImg.src;
