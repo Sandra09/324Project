@@ -18,6 +18,10 @@ label.logo{
     font-size: 35px;
     line-height: 80px;
     font-weight: bold;
+    padding-top: 20px;
+}
+.logo img{
+    width: 80px;
 }
 nav.dropDown{
     min-width: 16em;
