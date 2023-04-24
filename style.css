@@ -231,6 +231,7 @@ iframe{
 footer{
     margin: 50px;
     border-top: 2px black solid;
+    font-family: 'Urbanist', sans-serif;
 }
 .contact{
     display: flex;
