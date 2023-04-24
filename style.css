@@ -116,7 +116,7 @@ section h1{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-image: url('https://media1.giphy.com/media/hTZqITHNkgmX0fwt1C/giphy.gif');
+    background-image: url(Logo/giphy.gif);
     background-repeat: round;
     background-size: cover;
     height: 300px;
@@ -130,6 +130,11 @@ section h1{
     font-family: 'Titan One', cursive;
 }
 
+
+iframe{
+    display: block;
+    margin: auto;
+}
 /*Sections*/
 .viewfinder{
     display: flex;
@@ -171,7 +176,7 @@ section h1{
 
 /*Misc Statues*/
 .holder{
-    margin: 0 50px;
+    margin: 10px 50px;
 }
 
 .slider-wrapper{
@@ -180,6 +185,11 @@ section h1{
     margin: 0 auto;
 }
 .slider{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
     display: flex;
     aspect-ratio: 16/9;
     overflow-x: auto;
@@ -192,28 +202,96 @@ section h1{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    width: 48em;
+    height: 26.7em;
 }
-.slider-nav{
-    display: flex;
-    column-gap: 1em;
+.caption {
+    background: linear-gradient(rgba(0,0,0,0), #000);
     position: absolute;
-    bottom: 1.25em;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4em 1em 2em 1em;
+    text-align: center;
 }
-.slider-nav a{
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%;
-    background-color: #23242a;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
+.caption h1 {
+    margin: 0;
+    color: #fff;
 }
-.slider-nav a:hover{
-    opacity: 1;
+.caption p {
+    color: #8a8a8a;
 }
 footer{
     margin: 50px;
     border-top: 2px black solid;
 }
+
+
+/* .image-slider-wrapper{
+    position: relative;
+    max-width: 48em;
+    margin: 0 auto;
+}
+.image-slider{
+    position: relative;
+    background-image: url(Misc/Artinstituteofchicago.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type:  x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5em 3em -0.75em hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5em;
+}
+
+.image-slider *{
+    box-sizing: border-box;
+}
+.image-slider img{
+    width: 35px;
+    height: 35px;
+}
+.caption {
+    background: linear-gradient(rgba(0,0,0,0), #000);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4em 1em 2em 1em;
+    text-align: center;
+}
+.caption h1 {
+    margin: 0;
+    color: #fff;
+}
+.caption p {
+    color: #8a8a8a;
+}
+.arr-left,
+.arr-right{
+    background: #000;
+    position: absolute;
+    top: 40%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.arr-left:hover,
+.arr-right:hover{
+    background: #fff;
+}
+.arr-left{
+    left: 1em;
+}
+.arr-right{
+    right: 1em;
+} */
