@@ -137,6 +137,7 @@ section h1{
     text-decoration: none;
     color: #fff;
 }
+/*Special mentions*/
 
 /* Google API*/
 iframe{
@@ -147,10 +148,27 @@ iframe{
     width: 640px;
     height: 400px; 
     margin: 10px 20px 30px 5px
+iframe{
+    display: block;
+    margin: auto;
+    width: 760px;
+    height: 500px; 
+    margin: 5px 17px;
+}
     */
     height: 100;
     width: 50%;
     float: left;
+} 
+
+.artists{
+    
+}
+
+figcaption{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 /*Sections*/
