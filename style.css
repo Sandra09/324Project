@@ -138,20 +138,20 @@ section h1{
     color: #fff;
 }
 
+/* Google API*/
 iframe{
-    /*display: left;*/
-    width: 760px;
-    height: 500px; 
-    margin: 5px 17px;
+    /*
+    justify-content: center;
+    display: flex;
+    float: left;
+    width: 640px;
+    height: 400px; 
+    margin: 10px 20px 30px 5px
+    */
+    height: 100;
+    width: 50%;
+    float: left;
 }
-/* Google API
-#interactiveStreetView
-#mapWithMarkers {
-    width: 300px; 
-    height: 200px;
-    overflow: auto;
-}
-*/
 
 /*Sections*/
 .viewfinder{
