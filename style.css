@@ -137,11 +137,21 @@ section h1{
     text-decoration: none;
     color: #fff;
 }
-/* Google API */
+
 iframe{
-    display: block;
-    margin: auto;
+    /*display: left;*/
+    width: 760px;
+    height: 500px; 
+    margin: 5px 17px;
 }
+/* Google API
+#interactiveStreetView
+#mapWithMarkers {
+    width: 300px; 
+    height: 200px;
+    overflow: auto;
+}
+*/
 
 /*Sections*/
 .viewfinder{

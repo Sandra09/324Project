@@ -47,6 +47,8 @@ function RAGGalleryPicker(smallImg){
     fullImg.src = smallImg.src;
 };
 
+
+
 //misc slider
 //Get elements from the DOM
 // const slider = document.querySelector('.image-slider');
