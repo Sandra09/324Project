@@ -130,7 +130,7 @@ section h1{
     justify-content: center;
     text-align: center;
     margin: 100px;
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Titan One', cursive;
 }
 .menu a{
@@ -179,7 +179,6 @@ figcaption{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 50px;
 }
 .slideview img{
     display: block;
@@ -193,25 +192,21 @@ figcaption{
     opacity: 1;
     box-shadow: 0 0 0.8em #26489a;
 }
+.img-container{
+    margin: 0 10px;
+}
 .img-container img{
     height: 15rem;
     width: 15rem;
 }
-.img-container {
-    padding: 20px;
-}
 .scroll-wrapper{
     max-height: 15rem;
     overflow-y: auto;
-    padding-left: 25px;
+    padding: 0 10px;
+    margin: 0;
 }
 .scroll-wrapper img{
     text-align: center;
-}
-.finder img{
-    height: auto;
-    width: 40%;
-    border: 1px black solid;
 }
 
 /*Misc Art*/
@@ -221,7 +216,7 @@ figcaption{
 
 .image-slider-wrapper{
     position: relative;
-    max-width: 48em;
+    max-width: 25em;
     margin: 0 auto;
 }
 .image-slider{
@@ -290,7 +285,7 @@ figcaption{
 }
 
 footer{
-    margin: 50px;
+    margin: 0;
     border-top: 2px black solid;
     font-family: 'Urbanist', sans-serif;
 }
@@ -300,22 +295,27 @@ footer{
     justify-content: center;
 }
 .contact img{
-    width: 150px;
+    width: 70px;
     padding: 10px;
 }
 .contact h2{
-    padding-left: 50px;
+    padding-left: 0;
     text-decoration: underline;
+}
+.info{
+    font-size: 8px;
+    margin: 5px;
 }
 .info ul{
     list-style: none;
-}
-.info ul li{
-    padding: 5px;
+    padding-left: 0;
 }
 
 /*media queries*/
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 480px) and (max-width: 1024px){
+    .title{
+        font-size: 50px;
+    }
     .slideview img{
         height: 150px;
         width: 150px;
@@ -323,14 +323,36 @@ footer{
     }
     .img-container img{
         height: 35rem;
-        width: 40rem;
+        width: 36rem;
+    }
+    .image-slider-wrapper{
+        max-width: 35em;
     }
     .scroll-wrapper{
         max-height: 35rem;
     }
+    footer{
+        margin: 50px;
+    }
+    .contact h2{
+        padding-left: 40px;
+    }
+    .info{
+        font-size: 12px;
+    }
+    .info ul{
+        padding-left: 40px;
+    }
+    .contact img{
+        width: 150px;
+    }
+
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .title{
+        font-size: 50px;
+    }
     .slideview img{
         height: 200px;
         width: 200px;
@@ -341,5 +363,59 @@ footer{
     }
     .scroll-wrapper{
         max-height: 45rem;
+    }
+    .image-slider-wrapper{
+        max-width: 50em;
+    }
+    .scroll-wrapper{
+        margin: 0;
+    }
+    footer{
+        margin: 50px;
+    }
+    .contact h2{
+        padding-left: 40;
+    }
+    .info{
+        font-size: 15px;
+        margin: 10px;
+    }
+    .contact img{
+        width: 150px;
+    }
+}
+@media screen and (min-width: 1445px) {
+    body{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    .slideview img{
+        height: 250px;
+        width: 250px;
+    }
+    .img-container img{
+        height: 55rem;
+        width: 60rem;
+    }
+    .scroll-wrapper{
+        max-height: 55rem;
+    }
+    .image-slider-wrapper{
+        max-width: 70em;
+    }
+    footer{
+        margin: 50px;
+    }
+    .contact h2{
+        padding-left: 0;
+    }
+    .info{
+        font-size: 25px;
+        margin: 20px;
+    }
+    .contact img{
+        width: 200px;
     }
 }
