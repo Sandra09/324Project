@@ -141,34 +141,37 @@ section h1{
 
 /* Google API*/
 iframe{
-    /*
-    justify-content: center;
-    display: flex;
-    float: left;
-    width: 640px;
-    height: 400px; 
-    margin: 10px 20px 30px 5px
-iframe{
     display: block;
-    margin: auto;
-    width: 760px;
-    height: 500px; 
-    margin: 5px 17px;
-}
-    */
     height: 100;
     width: 50%;
     float: left;
+    margin-top: 5px;
+    margin-bottom: 75px;
 } 
 
-.artists{
-    
+.artists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0; 
+    list-style: none;
+}
+
+.artists img{
+    height: 230px;
+    width: 350px;
+    margin: 10px 50px;
+    padding: 1px; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figcaption{
-    display: flex;
+    display: block;
     align-items: stretch;
-    justify-content: space-evenly;
+    text-align: center;
+    max-width: 350px;
 }
 
 /*Sections*/
