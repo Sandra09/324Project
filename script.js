@@ -92,7 +92,7 @@ const arrLeft = document.querySelector('.arrow-left');
 const arrRight = document.querySelector('.arrow-right');
 const heading = document.querySelector('.caption h1');
 const description = document.querySelector('.caption p');
-const link = document.querySelector('.');
+//const link = document.querySelector('.');
 
 //data for the image slider
 const images = [
@@ -158,7 +158,6 @@ function slide(id){
     //change description
     description.innerText = descriptions[id];
     //change web links
-    //
 }
 //click arrows
 arrLeft.addEventListener('click', () => {
