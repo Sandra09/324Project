@@ -312,6 +312,7 @@ footer{
 }
 
 /*media queries*/
+/*Tablates*/
 @media screen and (min-width: 480px) and (max-width: 1024px){
     .title{
         font-size: 50px;
@@ -348,7 +349,7 @@ footer{
     }
 
 }
-
+/*Desktops*/
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     .title{
         font-size: 50px;
@@ -384,6 +385,8 @@ footer{
         width: 150px;
     }
 }
+
+/*Large Desktops*/
 @media screen and (min-width: 1445px) {
     body{
         font-size: 20px;
