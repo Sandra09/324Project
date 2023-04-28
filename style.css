@@ -251,9 +251,13 @@ figcaption{
     padding: 4em 1em 2em 1em;
     text-align: center;
 }
-.caption h1 {
+.caption h1 a{
     margin: 0;
     color: #fff;
+    text-decoration: none;
+}
+.caption h1 a:hover{
+    font-size: 2rem;
 }
 .caption p {
     color: #8a8a8a;

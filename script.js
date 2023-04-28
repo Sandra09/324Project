@@ -154,10 +154,9 @@ function slide(id){
     //set background image
     slider.style.backgroundImage = `url(Misc/${images[id]})`;
     //change heading
-    heading.innerText = headings[id];
+    heading.innerHTML = `<a href="${links[id]}" target="_blank">${headings[id]}</a>}`;
     //change description
     description.innerText = descriptions[id];
-    //change web links
 }
 //click arrows
 arrLeft.addEventListener('click', () => {
