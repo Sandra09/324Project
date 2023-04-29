@@ -322,7 +322,7 @@ footer{
 }
 
 /*media queries*/
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 479px){
     body{
         font-size: 10px; 
     }
@@ -347,7 +347,7 @@ footer{
 }
 
 /*Tablets*/
-@media screen and (min-width: 480px) and (max-width: 1024px){
+@media screen and (min-width: 480px) and (max-width: 1023px){
     .title{
         font-size: 50px;
     }
@@ -446,7 +446,7 @@ footer{
 }
 
 /*Large Desktops*/
-@media screen and (min-width: 1445px) {
+@media screen and (min-width: 1441px) {
     body{
         font-size: 20px;
     }
