@@ -47,43 +47,7 @@ function RAGGalleryPicker(smallImg){
     fullImg.src = smallImg.src;
 };
 
-/*
-let panorama; 
-function initMap(){
-    const centerMap = { lat: 42.0114836, lng: -87.6662966 };
 
-    const map = new google.maps.Map(document.getElementById("mapWithMarkers"), {
-        center: centerMap,
-        zoom: 18,
-        streetViewControl: false,
-    });
-
-    const marker1 = new google.maps.Marker({
-        position: { lat: 42.0091039, lng: -87.6661984 },
-        map,
-        title: "northwest",
-    });
-
-    const marker2 = new google.maps.Marker({
-        position: { lat: 42.0081255, lng: -87.6657592 },
-        map,
-        title: "central",
-    });
-
-    const marker3 = new google.maps.Marker({
-        position: { lat: 42.0066833, lng: -87.6657215},
-        map,
-        title: "soutwest",
-    });
-
-    panorama = map.getStreetView();
-    panorama.setPosition(centerMap);
-    panorama.setPov({
-        heading: 200,
-        pitch: 0,
-    });
-}
-*/
 
 //misc slider
 //Get elements from the DOM

@@ -140,13 +140,19 @@ section h1{
 /*Special mentions*/
 
 /* Google API*/
-iframe{
-    display: block;
-    height: 100;
-    width: 50%;
+#interactiveStreetView {
+    display: flex;
     float: left;
-    margin-top: 5px;
+    justify-content: center;
+    margin-bottom:75px;
+    margin-top: 10px;
+} 
+#mapWMarker {
+    display: flex;
+    float: left;
+    justify-content: center;
     margin-bottom: 75px;
+    margin-top: 10px; 
 } 
 
 .artists {
@@ -316,7 +322,31 @@ footer{
 }
 
 /*media queries*/
-/*Tablates*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+    body{
+        font-size: 10px; 
+    }
+    footer{
+        margin: 20px;
+    }
+    .artists img {
+        height: 230px;
+        width: 350px;
+        height: 180px;
+        width: 300px; 
+    }
+    #interactiveStreetView{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+    #mapWMarker{
+        height: 200px;
+        width: 100%;
+    }
+}
+
+/*Tablets*/
 @media screen and (min-width: 480px) and (max-width: 1024px){
     .title{
         font-size: 50px;
@@ -350,6 +380,19 @@ footer{
     }
     .contact img{
         width: 150px;
+    }
+    .artists img{
+        height: 230px;
+        width: 350px;
+    }
+    #interactiveStreetView{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+    #mapWMarker{
+        height: 200px;
+        width: 100%;
     }
 
 }
@@ -388,6 +431,18 @@ footer{
     .contact img{
         width: 150px;
     }
+    .artists img{
+        height: 230px;
+        width: 350px;
+    }
+    #interactiveStreetView{
+        height: 300px;
+        width: 50%;
+    }
+    #mapWMarker{
+        height: 300px;
+        width: 50%;
+    }
 }
 
 /*Large Desktops*/
@@ -424,5 +479,17 @@ footer{
     }
     .contact img{
         width: 200px;
+    }
+    .artists img{
+        height: 230px;
+        width: 350px;
+    }
+    #interactiveStreetView{
+        height: 700px;
+        width: 50%;
+    }
+    #mapWMarker{
+        height: 700px;
+        width: 50%;
     }
 }
